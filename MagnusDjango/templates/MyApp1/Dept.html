@@ -9,16 +9,15 @@
      <table border="1">
        <thead>
          <th>DEPTNO</th>
-         <th>DEPTNAME</th>
-         <th>SALARY</th>
-         <th>DEPTNO</th>
+         <th>DNAME</th>
+         <th>LOCATION</th>
+
        </thead>
-       {% for emp in employee%}
+       {% for dept in department%}
          <tr>
-           <td>{{emp.empno}}</td>
-           <td>{{emp.ename}}</td>
-           <td>{{emp.salary}}</td>
-           <td>{{emp.deptno}}</td>
+           <td>{{dept.deptno}}</td>
+           <td>{{dept.dname}}</td>
+           <td>{{dept.location}}</td>
          </tr>
        {% endfor %}
      </table>
